@@ -9,9 +9,11 @@ import "hardhat-gas-reporter"
 import "hardhat-deploy"
 import "hardhat-deploy-ethers"
 
+
 import "./tasks"
 import * as dotenv from "dotenv";
 dotenv.config({ path: __dirname+'/.env' });
+
 
 function getMnemonic(networkName) {
   if (networkName) {
@@ -21,25 +23,31 @@ function getMnemonic(networkName) {
     }
   }
 
+
   const mnemonic = process.env.MNEMONIC
   if (!mnemonic || mnemonic === '') {
     return 'test test test test test test test test test test test junk'
   }
 
+
   return mnemonic
 }
+
 
 function accounts(chainKey) {
   return { mnemonic: getMnemonic(chainKey) }
 }
 
+
 // You need to export an object to set up your config
 // Go to https://hardhat.org/config/ to learn more
+
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
 const config: HardhatUserConfig = {
+
 
   solidity: {
     compilers: [
@@ -71,42 +79,42 @@ const config: HardhatUserConfig = {
     hardhat: {
       accounts: accounts(),
     },
-    ethereum: {
+    "ethereum-mainnet": {
       url: "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161", // public infura endpoint
       chainId: 1,
       accounts: accounts(),
     },
-    bsc: {
+    "bsc-mainnet": {
       url: "https://1rpc.io/bnb",
       chainId: 56,
       accounts: accounts(),
     },
-    avalanche: {
+    "avalanche-mainnet": {
       url: "https://api.avax.network/ext/bc/C/rpc",
       chainId: 43114,
       accounts: accounts(),
     },
-    polygon: {
+    "polygon-mainnet": {
       url: "https://polygon-rpc.com",
       chainId: 137,
       accounts: accounts(),
     },
-    arbitrum: {
+    "arbitrum-mainnet": {
       url: `https://arb1.arbitrum.io/rpc`,
       chainId: 42161,
       accounts: accounts(),
     },
-    optimism: {
+    "optimism-mainnet": {
       url: `https://opt-mainnet.g.alchemy.com/v2/demo`,
       chainId: 10,
       accounts: accounts(),
     },
-    fantom: {
+    "fantom-mainnet": {
       url: `https://rpcapi.fantom.network`,
       chainId: 250,
       accounts: accounts(),
     },
-    goerli: {
+    "ethereum-testnet": {
       url: "https://goerli.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161", // public infura endpoint
       chainId: 5,
       accounts: accounts(),
@@ -116,31 +124,32 @@ const config: HardhatUserConfig = {
       chainId: 97,
       accounts: accounts(),
     },
-    fuji: {
+    "avalanche-testnet": {
       url: `https://api.avax-test.network/ext/bc/C/rpc`,
       chainId: 43113,
       accounts: accounts(),
     },
-    mumbai: {
+    "polygon-testnet": {
       url: "https://rpc-mumbai.maticvigil.com/",
       chainId: 80001,
       accounts: accounts(),
     },
-    'arbitrum-goerli': {
+    'arbitrum-testnet': {
       url: `https://goerli-rollup.arbitrum.io/rpc/`,
       chainId: 421613,
       accounts: accounts(),
     },
-    'optimism-goerli': {
+    'optimism-testnet': {
       url: `https://goerli.optimism.io/`,
       chainId: 420,
       accounts: accounts(),
     },
     'fantom-testnet': {
-      url: `https://rpc.ankr.com/fantom_testnet	`,
+      url: `https://rpc.ankr.com/fantom_testnet`,
       chainId: 4002,
       accounts: accounts(),
     }
   }
 };
 export default config
+
