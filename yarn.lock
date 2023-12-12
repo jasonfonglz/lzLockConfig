@@ -574,6 +574,13 @@
     "@jridgewell/resolve-uri" "^3.0.3"
     "@jridgewell/sourcemap-codec" "^1.4.10"
 
+"@layerzerolabs/lz-definitions@latest":
+  version "1.5.73"
+  resolved "https://registry.yarnpkg.com/@layerzerolabs/lz-definitions/-/lz-definitions-1.5.73.tgz#38e9ee6e17ec785e98ebde7170d9e6528e63faf3"
+  integrity sha512-GPfi51p6JvGSEvaiiJHQZ87+uPzYCU7NZqaprC0a/53BDmXNw10PZ1tJ2lCTjVB9b/Oes5iNXfavPnwwsJ+5BQ==
+  dependencies:
+    tiny-invariant "^1.3.1"
+
 "@layerzerolabs/lz-sdk@0.0.12", "@layerzerolabs/lz-sdk@latest":
   version "0.0.12"
   resolved "https://registry.npmjs.org/@layerzerolabs/lz-sdk/-/lz-sdk-0.0.12.tgz"
@@ -608,18 +615,16 @@
     hardhat-deploy-ethers "^0.3.0-beta.13"
     hardhat-gas-reporter "^1.0.6"
 
-"@layerzerolabs/ua-utils@0.0.4":
-  version "0.0.4"
-  resolved "https://registry.npmjs.org/@layerzerolabs/ua-utils/-/ua-utils-0.0.4.tgz#161cd54f78f7be09cd8ae35d9c82c73e36827aa9"
-  integrity sha512-fMtEMs9YQiaPeJALd5aXK1FfELagd77JiWf9NrJVQxXLlDO21d8FxyoYu32j2Wf9pJ8gXrpqKa0Q6kOc2lnRQQ==
+"@layerzerolabs/ua-utils@latest":
+  version "0.0.26"
+  resolved "https://registry.yarnpkg.com/@layerzerolabs/ua-utils/-/ua-utils-0.0.26.tgz#7c42fcbc10159fa4c4e5357fa20087b90d18ddfd"
+  integrity sha512-4k881q2ZAZiygq4ubNU5q+GsLIaMcoPrJ6kdiqTxR2S5aONJfJAMtTxY7BKrAetIjNaUA0aGp28Wxlc93WYWJQ==
   dependencies:
-    "@gnosis.pm/safe-core-sdk" "^2.0.0"
-    "@gnosis.pm/safe-core-sdk-types" "^1.0.0"
-    "@gnosis.pm/safe-ethers-lib" "^1.0.0"
-    "@gnosis.pm/safe-service-client" "1.1.1"
+    "@layerzerolabs/lz-definitions" latest
     "@layerzerolabs/lz-sdk" "0.0.12"
     chalk "4.1.2"
     cli-ux "^6.0.9"
+    exponential-backoff "^3.1.1"
 
 "@metamask/eth-sig-util@^4.0.0":
   version "4.0.1"
@@ -4483,6 +4488,11 @@ expand-brackets@^2.1.4:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
+
+exponential-backoff@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/exponential-backoff/-/exponential-backoff-3.1.1.tgz#64ac7526fe341ab18a39016cd22c787d01e00bf6"
+  integrity sha512-dX7e/LHVJ6W3DE1MHWi9S1EYzDESENfLrYohG2G++ovZrYOkm4Knwa0mc1cn84xJOR4KEU0WSchhLbd0UklbHw==
 
 express@^4.14.0:
   version "4.18.2"
@@ -9311,6 +9321,11 @@ timed-out@^4.0.1:
   version "4.0.1"
   resolved "https://registry.npmjs.org/timed-out/-/timed-out-4.0.1.tgz"
   integrity sha512-G7r3AhovYtr5YKOWQkta8RKAPb+J9IsO4uVmzjl8AZwfhs8UcUwTiD6gcJYSgOtzyjvQKrKYn41syHbUWMkafA==
+
+tiny-invariant@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.3.1.tgz#8560808c916ef02ecfd55e66090df23a4b7aa642"
+  integrity sha512-AD5ih2NlSssTCwsMznbvwMZpJ1cbhkGd2uueNxzv2jDlEeZdU04JQfRnggJQ8DrcVBGjAsCKwFBbDlVNtEMlzw==
 
 tmp@0.0.33, tmp@^0.0.33:
   version "0.0.33"

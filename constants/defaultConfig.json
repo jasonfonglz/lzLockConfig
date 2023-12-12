@@ -1,0 +1,52 @@
+{
+  "optimism-mainnet": {
+    "sendVersion": 2,
+    "receiveVersion": 2,
+    "address": "0x885ef5813E46ab6EFb10567b50b77aAAD4d258ce",
+    "remoteConfigs": [
+      {
+        "remoteChain": "optimism-mainnet",
+        "inboundProofLibraryVersion": 1,
+        "inboundBlockConfirmations": 20,
+        "relayer": "0x81E792e5a9003CC1C8BF5569A00f34b65d75b017",
+        "outboundProofType": 1,
+        "outboundBlockConfirmations": 20,
+        "oracle": "0xD56e4eAb23cb81f43168F9F45211Eb027b9aC7cc"
+      },
+      {
+        "remoteChain": "avalanche-mainnet",
+        "inboundProofLibraryVersion": 1,
+        "inboundBlockConfirmations": 12,
+        "relayer": "0x81E792e5a9003CC1C8BF5569A00f34b65d75b017",
+        "outboundProofType": 1,
+        "outboundBlockConfirmations": 20,
+        "oracle": "0xD56e4eAb23cb81f43168F9F45211Eb027b9aC7cc"
+      }
+    ]
+  },
+  "avalanche-mainnet": {
+    "sendVersion": 2,
+    "receiveVersion": 2,
+    "address": "0xC7CC66a88e2f121Fb104344EAcB7BA7bCAe79DFA",
+    "remoteConfigs": [
+      {
+        "remoteChain": "optimism-mainnet",
+        "inboundProofLibraryVersion": 1,
+        "inboundBlockConfirmations": 20,
+        "relayer": "0xCD2E3622d483C7Dc855F72e5eafAdCD577ac78B4",
+        "outboundProofType": 1,
+        "outboundBlockConfirmations": 12,
+        "oracle": "0xD56e4eAb23cb81f43168F9F45211Eb027b9aC7cc"
+      },
+      {
+        "remoteChain": "avalanche-mainnet",
+        "inboundProofLibraryVersion": 1,
+        "inboundBlockConfirmations": 12,
+        "relayer": "0xCD2E3622d483C7Dc855F72e5eafAdCD577ac78B4",
+        "outboundProofType": 1,
+        "outboundBlockConfirmations": 12,
+        "oracle": "0xD56e4eAb23cb81f43168F9F45211Eb027b9aC7cc"
+      }
+    ]
+  }
+}
